@@ -104,16 +104,20 @@ footer{text-align:center;font-family:Caveat;font-size:23px;color:#a45c6b;margin-
     <h2>Our Song 🎵</h2>
     <p><b>Chinay - La Mave</b></p>
     <p class="small">For the final version, add your legally obtained audio file as <b>music.mp3</b> in this folder.</p>
-    <audio class="music" controls loop src="Chinay.mp3"></audio>
+    <audio id="music" class="music" controls loop src="Chinay.mp3"></audio>
   </section>
   <footer>Made with love by Lancer ♡</footer>
 </main>
 </div>
 <script>
 function openGift(){
-  document.getElementById('intro').classList.add('hidden');
-  document.getElementById('gift').classList.remove('hidden');
-  window.scrollTo(0,0);
+    document.getElementById('intro').classList.add('hidden');
+    document.getElementById('gift').classList.remove('hidden');
+
+    const music = document.getElementById('music');
+    music.play().catch(() => {});
+
+    window.scrollTo(0,0);
 }
 </script>
 </body>
