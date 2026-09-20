@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For My Bear ♡</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#fff3f5;color:#5d3942;font-family:Poppins,sans-serif}
+.page{max-width:520px;margin:auto;min-height:100vh;padding:28px 20px 55px;overflow:hidden}
+.card{background:rgba(255,255,255,.78);border:1px solid #f6d7dc;border-radius:28px;padding:28px 22px;margin:18px 0;box-shadow:0 12px 35px rgba(119,66,78,.09)}
+h1,h2{font-family:Caveat,cursive;font-weight:600;margin:8px 0;color:#8f4353}
+h1{font-size:48px;line-height:1.05}h2{font-size:38px}.center{text-align:center}.small{font-size:13px;color:#9a727b}
+.heart{font-size:28px;animation:pulse 1.6s infinite}@keyframes pulse{50%{transform:scale(1.15)}}
+#intro{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center}
+.envelope{font-size:82px;margin:20px}.btn{border:0;background:#e9879b;color:white;border-radius:999px;padding:14px 25px;font-size:15px;font-weight:600;cursor:pointer;box-shadow:0 8px 18px #e9879b55}
+.hidden{display:none!important}.photo-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.photo{background:#fff;padding:8px;border-radius:8px;box-shadow:0 5px 16px #70444d18;transform:rotate(-2deg)}.photo:nth-child(even){transform:rotate(2deg)}
+.photo img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:4px;display:block}.caption{text-align:center;font-family:Caveat;font-size:19px;padding:5px}
+.timeline{border-left:3px solid #efb2bd;padding-left:18px}.event{position:relative;margin:22px 0}.event:before{content:"♡";position:absolute;left:-34px;top:-3px;background:#fff3f5;color:#d66e83;font-size:20px}
+.reason{background:#fde3e7;padding:12px 15px;border-radius:18px;margin:10px 0}.letter{line-height:1.9;font-size:15px}
+.final{background:linear-gradient(150deg,#f7b4c0,#d98b9b);color:white}.final h2{color:white}.music{width:100%;margin-top:10px}
+footer{text-align:center;font-family:Caveat;font-size:23px;color:#a45c6b;margin-top:30px}
+</style>
+</head>
+<body>
+<div class="page">
+<section id="intro">
+  <div>
+    <div class="heart">♡</div>
+    <div class="envelope">💌</div>
+    <h1>You received<br>a little something...</h1>
+    <p>Made especially for you, Bear.</p>
+    <button class="btn" onclick="openGift()">Open it ♡</button>
+  </div>
+</section>
+
+<main id="gift" class="hidden">
+  <section class="card center">
+    <div class="heart">♡</div>
+    <h1>Happy 1st<br>Monthsary</h1>
+    <h2>Isabella Mischa</h2>
+    <p>My Bear, my today, my tomorrow, my always.</p>
+    <p class="small">August 21 → September 21</p>
+  </section>
+
+  <section class="card">
+    <h2>A Letter For You ♡</h2>
+    <div class="letter">
+      <p>Dear Isabella,</p>
+      <p>I honestly don't know the perfect words to say everything I feel, but I want you to know how special you are to me. This first month with you has given me memories that I will always treasure.</p>
+      <p>One of my favorite memories is spending my birthday with you. Having you there made that day feel even more special, and I'm really thankful that I got to share it with someone I love.</p>
+      <p>You are so pretty, but what makes you even more beautiful to me is simply being you. Thank you for the smiles, the little moments, and for being part of my life.</p>
+      <p>This is only our first month, and I hope it is just the beginning of many more memories together. I can't wait to see where our story takes us.</p>
+      <p>I love you, Bear. ♡</p>
+      <p>— Lancer</p>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Our Memories ♡</h2>
+    <p class="small">Replace these pictures with your own photos.</p>
+    <div class="photo-grid">
+      <div class="photo"><img src="photos/photo1.svg"><div class="caption">Us ♡</div></div>
+      <div class="photo"><img src="photos/photo2.svg"><div class="caption">A favorite moment</div></div>
+      <div class="photo"><img src="photos/photo3.svg"><div class="caption">My birthday with you</div></div>
+      <div class="photo"><img src="photos/photo4.svg"><div class="caption">Just us</div></div>
+      <div class="photo"><img src="photos/photo5.svg"><div class="caption">Another memory</div></div>
+      <div class="photo"><img src="photos/photo6.svg"><div class="caption">More to come ♡</div></div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Our Little Timeline ♡</h2>
+    <div class="timeline">
+      <div class="event"><b>August 21</b><br>When our story began. ♡</div>
+      <div class="event"><b>My Birthday</b><br>A day I got to celebrate with my favorite person.</div>
+      <div class="event"><b>Our First Month</b><br>One month of memories, smiles, and love.</div>
+      <div class="event"><b>Next chapters...</b><br>Hopefully, many more with you. ♡</div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Things I Love About You ♡</h2>
+    <div class="reason">♡ You're really pretty.</div>
+    <div class="reason">♡ You make ordinary moments feel special.</div>
+    <div class="reason">♡ I love the way you make me smile.</div>
+    <div class="reason">♡ I love being able to call you my Bear.</div>
+    <div class="reason">♡ Most of all, I love you for being you.</div>
+  </section>
+
+  <section class="card final center">
+    <h2>One More Thing...</h2>
+    <p>Our first month is only a tiny part of our story.</p>
+    <p>I hope we get to fill many more months with pictures, birthdays, random moments, laughter, and memories that we'll look back on someday.</p>
+    <h2>Happy 1st Monthsary, Bear. ♡</h2>
+    <p>Thank you for being you.</p>
+    <p>— Lancer</p>
+  </section>
+
+  <section class="card center">
+    <h2>Our Song 🎵</h2>
+    <p><b>Chinay - La Mave</b></p>
+    <p class="small">For the final version, add your legally obtained audio file as <b>music.mp3</b> in this folder.</p>
+    <audio class="music" controls loop src="music.mp3"></audio>
+  </section>
+  <footer>Made with love by Lancer ♡</footer>
+</main>
+</div>
+<script>
+function openGift(){
+  document.getElementById('intro').classList.add('hidden');
+  document.getElementById('gift').classList.remove('hidden');
+  window.scrollTo(0,0);
+}
+</script>
+</body>
+</html>
