@@ -3,131 +3,94 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>For My Bear ♡</title>
+<title>Our Love Story ♡</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#fff3f5;color:#5d3942;font-family:Poppins,sans-serif}
-.page{max-width:520px;margin:auto;min-height:100vh;padding:28px 20px 55px;overflow:hidden}
-.card{background:rgba(255,255,255,.78);border:1px solid #f6d7dc;border-radius:28px;padding:28px 22px;margin:18px 0;box-shadow:0 12px 35px rgba(119,66,78,.09)}
-h1,h2{font-family:Caveat,cursive;font-weight:600;margin:8px 0;color:#8f4353}
-h1{font-size:48px;line-height:1.05}h2{font-size:38px}.center{text-align:center}.small{font-size:13px;color:#9a727b}
-.heart{font-size:28px;animation:pulse 1.6s infinite}@keyframes pulse{50%{transform:scale(1.15)}}
-#intro{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center}
-.envelope{font-size:82px;margin:20px}.btn{border:0;background:#e9879b;color:white;border-radius:999px;padding:14px 25px;font-size:15px;font-weight:600;cursor:pointer;box-shadow:0 8px 18px #e9879b55}
-.hidden{display:none!important}.photo-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.photo{background:#fff;padding:8px;border-radius:8px;box-shadow:0 5px 16px #70444d18;transform:rotate(-2deg)}.photo:nth-child(even){transform:rotate(2deg)}
-.photo img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:4px;display:block}.caption{text-align:center;font-family:Caveat;font-size:19px;padding:5px}
-.timeline{border-left:3px solid #efb2bd;padding-left:18px}.event{position:relative;margin:22px 0}.event:before{content:"♡";position:absolute;left:-34px;top:-3px;background:#fff3f5;color:#d66e83;font-size:20px}
-.reason{background:#fde3e7;padding:12px 15px;border-radius:18px;margin:10px 0}.letter{line-height:1.9;font-size:15px}
-.final{background:linear-gradient(150deg,#f7b4c0,#d98b9b);color:white}.final h2{color:white}.music{width:100%;margin-top:10px}
-footer{text-align:center;font-family:Caveat;font-size:23px;color:#a45c6b;margin-top:30px}
-#special-message{font-size:18px;color:#a45c6b;text-align:left;}
+:root{--pink:#fff3f5;--rose:#e9879b;--dark:#8f4353;--text:#5d3942;--line:#f3d4dc}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:linear-gradient(155deg,#fffafd,#fff0f4);color:var(--text);font-family:Poppins,sans-serif}
+.page{max-width:560px;margin:auto;padding:22px 18px 45px}
+header{text-align:center;padding:30px 10px 18px}
+h1,h2,h3{font-family:Caveat,cursive;color:var(--dark);margin:8px 0}
+h1{font-size:58px;line-height:1.02}h2{font-size:38px}h3{font-size:28px}
+p{line-height:1.75}.small{font-size:12px;color:#9a727b}
+.heart{color:#d8758c;font-size:28px;display:inline-block;animation:pulse 1.8s infinite}
+@keyframes pulse{50%{transform:scale(1.12)}}
+.card{background:#ffffffd9;border:1px solid var(--line);border-radius:25px;padding:23px 19px;margin:16px 0;box-shadow:0 12px 30px #79414c12}
+.center{text-align:center}
+.cover{background:linear-gradient(145deg,#fbe0e7,#fff7f8 65%,#f7c8d3);border-radius:22px;padding:24px 16px;text-align:center;border:1px solid #f2cdd6}
+.btn{border:0;background:var(--rose);color:white;border-radius:999px;padding:13px 19px;font:600 13px Poppins,sans-serif;cursor:pointer;box-shadow:0 7px 16px #e9879b35;transition:transform .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn.secondary{background:#fff;color:var(--dark);border:1px solid #efc4ce;box-shadow:none}
+.chapter-list{display:grid;grid-template-columns:1fr;gap:13px}
+.chapter-button{display:flex;align-items:center;gap:13px;width:100%;border:1px solid #efcbd4;border-radius:20px;padding:16px;background:#fff9fa;text-align:left;color:var(--text);cursor:pointer;transition:transform .2s,background .2s}
+.chapter-button:hover{transform:translateY(-2px);background:#fff0f4}
+.chapter-icon{flex:0 0 48px;width:48px;height:48px;display:grid;place-items:center;background:#fbe1e8;border-radius:15px;font-size:23px}
+.chapter-copy{flex:1}.chapter-num{font-size:10px;letter-spacing:1px;color:#ad7180;font-weight:700}.chapter-name{font:28px Caveat,cursive;color:var(--dark);margin:2px 0}.chapter-date{font-size:11px;color:#9a727b}.arrow{font-size:23px;color:#b96c80}
+.letter{line-height:1.9;font-size:14px}
+.photos{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}
+.photo{background:white;padding:7px;border-radius:9px;box-shadow:0 5px 15px #70444d15;transform:rotate(-1deg)}
+.photo:nth-child(even){transform:rotate(1deg)}
+.photo img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:5px;background:#fae5ea;display:block}
+.caption{text-align:center;font:19px Caveat,cursive;padding:6px 2px}
+.reason{background:#fde3e7;padding:11px 13px;border-radius:15px;margin:9px 0;font-size:14px}
+.timeline{border-left:3px solid #efb2bd;padding-left:18px;margin-left:8px}.event{position:relative;margin:18px 0;line-height:1.7}.event:before{content:"♡";position:absolute;left:-34px;top:-3px;background:#fff3f5;color:#d66e83;font-size:20px}
+.final{background:linear-gradient(145deg,#ef9cac,#d98b9b);color:white}.final h2,.final h3{color:white}
+.hidden{display:none!important}.music{width:100%;margin-top:7px}footer{text-align:center;font:24px Caveat,cursive;color:#a45c6b;padding:22px 0}
+@media(max-width:380px){h1{font-size:50px}.card{padding:20px 15px}.chapter-name{font-size:25px}}
 </style>
 </head>
-<body>
-<div class="page">
-<section id="intro">
-  <div>
-    <div class="heart">♡</div>
-    <div class="envelope">💌</div>
-    <h1>You received<br>a little something...</h1>
-    <p>Made especially for you, Bear.</p>
-    <button class="btn" onclick="openGift()">Open it ♡</button>
-  </div>
+<body><div class="page">
+<section id="home">
+<header><div class="heart">♡</div><div class="small">A LITTLE PLACE FOR OUR MEMORIES</div><h1>Our Love Story</h1>
+<p>Every month, a new memory.<br>Every chapter, a little more of us.</p><p class="small">Made with love by Lancer, for Bear ♡</p></header>
+<section class="card"><div class="cover"><div style="font-size:45px">💌</div><h2>Hi, my Bear!</h2>
+<p>I made this little corner of the internet so we can keep our memories in one place and look back at how our story grows.</p>
+<p class="small">Choose a chapter below to open its letters, pictures, and song. ♡</p></div></section>
+<section class="card"><h2 class="center">Choose Our Chapter ♡</h2><p class="small center">Tap a button to revisit that month's memories.</p>
+<div class="chapter-list">
+<button class="chapter-button" onclick="openChapter('1')"><span class="chapter-icon">♡</span><span class="chapter-copy"><span class="chapter-num">CHAPTER 01</span><div class="chapter-name">Our First Monthsary</div><div class="chapter-date">August 21 – September 21</div><div class="small">Our beginning, our first memories, and our song.</div></span><span class="arrow">›</span></button>
+<button class="chapter-button" onclick="openChapter('2')"><span class="chapter-icon">♡</span><span class="chapter-copy"><span class="chapter-num">CHAPTER 02</span><div class="chapter-name">Our Second Monthsary</div><div class="chapter-date">September 21 – October 21</div><div class="small">A new chapter with new memories and a new song.</div></span><span class="arrow">›</span></button>
+</div></section>
+<section class="card center"><h2>A Little Promise ♡</h2><p>I don't want to forget the little things that make our story ours. Every month, I'll add another chapter here, and our old memories will always have a place.</p><p class="small">Scroll through our story whenever you miss me. ♡</p></section>
 </section>
 
-<main id="gift" class="hidden">
-  <section class="card center">
-    <div class="heart">♡</div>
-    <h1>Happy 1st<br>Monthsary</h1>
-    <h2>Isabella Mischa</h2>
-    <p>My Bear, my today, my tomorrow, my always.</p>
-    <p class="small">August 21 → September 21</p>
-  </section>
+<section id="chapter1" class="hidden">
+<div class="nav"><button class="btn secondary" onclick="home()">← All chapters</button><button class="btn" onclick="openChapter('2')">Open 2nd Monthsary →</button></div>
+<div class="cover"><div class="small">CHAPTER 01</div><h1>Our First Monthsary</h1><p>August 21 – September 21</p><div class="heart">♡</div><p>Where our little story began.</p></div>
+<section class="card center"><h2>Happy 1st Monthsary ♡</h2><h3>Isabella Mischa</h3><p>My Bear, my today, my tomorrow, my always.</p><p class="small">August 21 → September 21</p></section>
+<section class="card"><h2>A Letter For You ♡</h2><div class="letter">
+<p>Dear Isabella,</p><p>First of all, happy monthsary to us! I honestly don't know what to say. I'm not really good at writing or expressing my thoughts in English, but here I am, trying my best to do this for you hahahahahahah.</p>
+<p>I want you to know how special you are to me. This first month with you has given me memories that I will always treasure.</p><p>One of my favorite memories is spending my birthday with you. Having you there made that day feel even more special, and I'm really thankful that I got to share it with someone I love.</p>
+<p>You are so pretty, but what makes you even more beautiful to me is simply being you. Thank you for the smiles, the little moments, and for being part of my life.</p><p>This is only our first month, and I hope it is just the beginning of many more memories together.</p>
+<p>I hope you appreciate my little surprise for you. For now, I don't really have anything material that I can give you, but I promise someday, when I can afford it, I won't hesitate to buy you the things you deserve. For now, I just wanted to make something simple but special for you. I hope it makes you smile. Hahahaha. I love you, Bear. ♡</p><p>— Lancer</p></div></section>
+<section class="card"><h2>Our Memories ♡</h2><p class="small">Our pictures together &lt;33</p><div class="photos">
+<div class="photo"><img src="us.jpg" alt="Us"><div class="caption">Us ♡</div></div><div class="photo"><img src="fav.jpg" alt="Favorite moment"><div class="caption">A favorite moment</div></div>
+<div class="photo"><img src="bday.jpg" alt="Birthday"><div class="caption">My birthday with you</div></div><div class="photo"><img src="justus.jpg" alt="Just us"><div class="caption">Just us</div></div>
+<div class="photo"><img src="1.jpg" alt="Memory"><div class="caption">Another memory</div></div><div class="photo"><img src="2.jpg" alt="More memories"><div class="caption">More to come ♡</div></div></div></section>
+<section class="card"><h2>Our Little Timeline ♡</h2><div class="timeline"><div class="event"><b>August 21</b><br>When our story began. ♡</div><div class="event"><b>My Birthday</b><br>A day I got to celebrate with my favorite person.</div><div class="event"><b>Our First Month</b><br>One month of memories, smiles, and love.</div></div></section>
+<section class="card"><h2>Things I Love About You ♡</h2><div class="reason">♡ You're really pretty.</div><div class="reason">♡ You make ordinary moments feel special.</div><div class="reason">♡ I love the way you make me smile.</div><div class="reason">♡ I love being able to call you my Bear.</div><div class="reason">♡ Most of all, I love you for being you.</div></section>
+<section class="card final center"><h2>One More Thing...</h2><p>Our first month is only a tiny part of our story.</p><p>I hope we get to fill many more months with pictures, birthdays, random moments, laughter, and memories.</p><h2>Happy 1st Monthsary, Bear. ♡</h2><p>— Lancer</p></section>
+<section class="card center"><h2>Our Song 🎵</h2><p><b>Chinay - La Mave</b></p><p class="small">This song always reminds me of you, and I know you feel the same too HAHAHAHAHAHA &lt;333</p><audio class="music" controls loop src="Chinay.mp3"></audio><p class="small">Tap play to listen to our first-month song. ♡</p></section>
+<div class="nav"><button class="btn secondary" onclick="home()">♡ Back to our chapters</button></div>
+</section>
 
-  <section class="card">
-    <h2>A Letter For You ♡</h2>
-    <div class="letter">
-      <p>Dear Isabella,</p>
-      <p>First of all, happy monthsary to us! I don't know what to say. I'm not really good at writing or expressing my thoughts in English, but here I am, trying my best to do this for you hahahahahahah.</p>
-      <p>I honestly don't know the perfect words to say everything I feel, but I want you to know how special you are to me. This first month with you has given me memories that I will always treasure.</p>
-      <p>One of my favorite memories is spending my birthday with you. Having you there made that day feel even more special, and I'm really thankful that I got to share it with someone I love.</p>
-      <p>You are so pretty, but what makes you even more beautiful to me is simply being you. Thank you for the smiles, the little moments, and for being part of my life.</p>
-      <p>This is only our first month, and I hope it is just the beginning of many more memories together. I can't wait to see where our story takes us.</p>
-      <p>I love you so so much, Bear. ♡</p>
-      <p>— Lancer</p>
-    </div>
-  </section>
-
-  <section class="card">
-    <h2>Our Memories ♡</h2>
-    <p class="small">Our Pictures together<33</p>
-    <div class="photo-grid">
-      <div class="photo"><img src="us.jpg"><div class="caption">Us ♡</div></div>
-      <div class="photo"><img src="fav.jpg"><div class="caption">A favorite moment</div></div>
-      <div class="photo"><img src="bday.jpg"><div class="caption">My birthday with you</div></div>
-      <div class="photo"><img src="justus.jpg"><div class="caption">Just us</div></div>
-      <div class="photo"><img src="1.jpg"><div class="caption">Another memory</div></div>
-      <div class="photo"><img src="2.jpg"><div class="caption">More to come ♡</div></div>
-    </div>
-  </section>
-
-  <section class="card">
-    <h2>Our Little Timeline ♡</h2>
-    <div class="timeline">
-      <div class="event"><b>August 21</b><br>When our story began. ♡</div>
-      <div class="event"><b>My Birthday</b><br>A day I got to celebrate with my favorite person.</div>
-      <div class="event"><b>Our First Month</b><br>One month of memories, smiles, and love.</div>
-      <div class="event"><b>Next chapters...</b><br>Hopefully, many more with you. ♡</div>
-    </div>
-  </section>
-
-  <section class="card">
-    <h2>Things I Love About You ♡</h2>
-    <div class="reason">♡ You're really pretty.</div>
-    <div class="reason">♡ You make ordinary moments feel special.</div>
-    <div class="reason">♡ I love the way you make me smile.</div>
-    <div class="reason">♡ I love being able to call you my Bear.</div>
-    <div class="reason">♡ Most of all, I love you for being you.</div>
-  </section>
-
-  <section class="card final center">
-    <h2>One More Thing...</h2>
-    <p>Our first month is only a tiny part of our story.</p>
-    <p>I hope we get to fill many more months with pictures, birthdays, random moments, laughter, and memories that we'll look back on someday.</p>
-    <h2>Happy 1st Monthsary, Bear. ♡</h2>
-    <p>Thank you for being you.</p>
-    <p>— Lancer</p>
-  </section>
-
-  <section class="card center">
-    <h2>Our Song 🎵</h2>
-    <p><b>Chinay - La Mave</b></p>
-    <p class="small">This song always remind me of you and i know you too HAHAHAHAHAHAAHHA tames <333</p>
-    <audio id="music" class="music" controls loop src="Chinay.mp3"></audio>
-  </section>
-
-  <p id="special-message">I hope you appreciate my little surprise for you. 
-    For now, I don't really have anything material that I can give you, but I promise someday, when I have enough money,
-    I won't hesitate to buy you the things you deserve. For now, I just wanted to make something simple but special for you.
-    I hope it makes you smile. ayos ba ang sweet HAHAHAHAHAHAH basta I love you Bear mwamwachupchup. ♡ 
-  </p>
-  <footer>Made with love by Lancer ♡</footer>
-  
-</main>
-</div>
+<section id="chapter2" class="hidden">
+<div class="nav"><button class="btn secondary" onclick="home()">← All chapters</button><button class="btn secondary" onclick="openChapter('1')">← Open 1st Monthsary</button></div>
+<div class="cover"><div class="small">CHAPTER 02</div><h1>Our Second Monthsary</h1><p>September 21 – October 21</p><div class="heart">♡</div><p>Two months down, and I still choose you.</p></div>
+<section class="card center"><h2>Happy 2nd Monthsary ♡</h2><h3>My Bear, Isabella</h3><p>Two months of us, and so many more memories waiting for us.</p><p class="small">August 21 → October 21 · Our story keeps growing</p></section>
+<section class="card"><h2>A New Letter For You ♡</h2><div class="letter"><p>Dear Bear,</p><p>Happy 2nd monthsary to us! ♡ It's already been two months, and I'm really happy that I get to share these moments with you.</p><p>I'm still not the best at expressing my thoughts in English HAHAHA, but I want to keep trying because you deserve to know how much you mean to me.</p><p>One thing I love about us is that we're making our own little memories, even through simple moments. I want to remember them, so I made this website into our own little storybook. Every month, I'll add a new chapter, but I'll keep our old memories here too, because they will always be part of our story.</p><p>Thank you for being my Bear and for being someone who makes my days more special. I hope we keep learning about each other, laughing together, and making more memories — one month at a time.</p><p>Happy 2nd monthsary, Bear. This is just our second chapter, and I hope we get to write many more together. I love you. ♡</p><p>— Your Lancer</p></div></section>
+<section class="card"><h2>Memories From Month Two ♡</h2><p class="small">Add this month's real photos using these filenames, or change the filenames to match your own.</p><div class="photos">
+<div class="photo"><img src="month2-1.jpg" alt="Month two memory"><div class="caption">A moment with you ♡</div></div><div class="photo"><img src="month2-2.jpg" alt="Month two memory"><div class="caption">My favorite person</div></div><div class="photo"><img src="month2-3.jpg" alt="Month two memory"><div class="caption">Another little memory</div></div><div class="photo"><img src="month2-4.jpg" alt="Month two memory"><div class="caption">More of us &lt;33</div></div></div></section>
+<section class="card"><h2>What I Want To Remember ♡</h2><div class="reason">♡ A little moment that made me smile: add your memory here.</div><div class="reason">♡ Something funny we did: add your memory here.</div><div class="reason">♡ Something I appreciate about you: add your thought here.</div></section>
+<section class="card center"><h2>Our Song for Month Two 🎵</h2><p><b>Happiness — Rex Orange County</b></p><p class="small">Our second-month song ♡</p><audio class="music" controls loop src="Happiness.mp3"></audio><p class="small">Upload your audio file as <b>Happiness.mp3</b> in the same folder as index.html, or change the filename in this code to match your file.</p></section>
+<section class="card final center"><h2>To Be Continued...</h2><p>One chapter finished, so many more to come.</p><p>Whenever we reach another month, I'll come back here and add more of our story. The old chapters will stay, just like the memories they hold.</p><h2>I love you, Bear. ♡</h2><p>— Lancer</p><button class="btn secondary" onclick="home()">Return to our storybook</button></section>
+<div class="nav"><button class="btn secondary" onclick="home()">♡ Back to our chapters</button></div>
+</section>
+<footer>Made with love by Lancer ♡</footer></div>
 <script>
-function openGift(){
-    document.getElementById('intro').classList.add('hidden');
-    document.getElementById('gift').classList.remove('hidden');
-
-    const music = document.getElementById('music');
-    music.play().catch(() => {});
-
-    window.scrollTo(0,0);
-}
-</script>
-</body>
-</html>
+function home(){document.getElementById('home').classList.remove('hidden');document.getElementById('chapter1').classList.add('hidden');document.getElementById('chapter2').classList.add('hidden');window.scrollTo({top:0,behavior:'smooth'})}
+function openChapter(n){document.getElementById('home').classList.add('hidden');document.getElementById('chapter1').classList.add('hidden');document.getElementById('chapter2').classList.add('hidden');document.getElementById(n==='1'?'chapter1':'chapter2').classList.remove('hidden');window.scrollTo({top:0,behavior:'smooth'})}
+</script></body></html>
